@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint-config-prettier",
+    "prettier",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-vars": "warn"
+  }
+}
