@@ -7,8 +7,6 @@ import LuckyMoneyCard from "@/shared/components/luckey-money-card/LuckyMoneyCard
 import { PagePath } from "@/shared/constant";
 import { useCreateLuckyMoneyMutation, useGetLuckyMoneysQuery } from "@/shared/slices/lucky-money/lucky-money.api";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { signOut } from "next-auth/react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -18,7 +16,7 @@ const schema = yup.object().shape({
     name: yup.string().required('Hãy nhập tên của lì xì'),
 });
 
-const HomePage = () => {
+const LuckyMoneyPage = () => {
     const router = useRouter();
 
     const [isOpenCreateDialog, setIsOpenCreateDialog] = useState(false);
@@ -109,4 +107,4 @@ const HomePage = () => {
     </div>;
 };
 
-export default HomePage;
+export default LuckyMoneyPage;

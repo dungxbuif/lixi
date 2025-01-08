@@ -12,6 +12,7 @@
     "migrate:dev": "prisma migrate dev",
     "prepare": "husky install",
     "prisma:seed": "ts-node prisma/seed.ts",
+    "prisma:format": "prisma format",
     "prisma:migrate:dev": "prisma migrate dev",
     "postinstall": "prisma generate"
   },
